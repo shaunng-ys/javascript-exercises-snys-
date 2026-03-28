@@ -8,7 +8,6 @@
 function removeFromArray(...args) {
 	let itemsToRemove = args.slice(1);
 
-	console.log(args[0].length - 1);
 	for (let i = 0; i <= args[0].length - 1; i++) {
 		if (itemsToRemove.includes(args[0][i])) {
 			args[0].splice(i, 1);
@@ -18,7 +17,7 @@ function removeFromArray(...args) {
 	return (args[0]);
 }
 
-console.log(removeFromArray([1, 2, 3, 4], 3, 2));
+// console.log(removeFromArray([1, 2, 3, 4], 3, 2));
 
 // Do not edit below this line
 module.exports = removeFromArray;
